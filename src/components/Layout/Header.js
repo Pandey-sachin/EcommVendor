@@ -16,6 +16,7 @@ import Logo from "./Logo";
 import api from "../../common/api";
 const Header = () => {
   const user = useSelector((state) => state.auth.user);
+  console.log(user)
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
   const profileRef = useRef(null);

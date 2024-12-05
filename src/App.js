@@ -12,8 +12,7 @@ function App() {
   useEffect(() => {
     // Check if user data and jwtToken exist in localStorage
     const savedUser = localStorage.getItem('userData');
-    const savedToken = localStorage.getItem('jwtToken');
-
+    const savedToken = localStorage.getItem('token');
     if (savedUser && savedToken) {
       // Restore login state by dispatching loginSuccess
       dispatch(loginSuccess({
